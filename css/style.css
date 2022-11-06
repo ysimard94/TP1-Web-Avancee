@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(206, 231, 255);
+}
+
+nav a{
+    color: black;
+    padding: 1em;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: rgb(243, 249, 255);
+}
+
+nav a:not(:first-of-type) {
+    border-left: 2px solid rgba(25, 25, 25, 0.1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+main > * {
+    margin-inline: auto;
+    margin-top: 1em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+table tr:nth-child(even){
+    background-color: rgb(243, 243, 243);
+}
+  
+table th {
+    padding: 10px;
+    text-align: left;
+    width: fit-content;
+    background-color: rgb(206, 231, 255);
+}
+
+form > input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(206, 231, 255);
+}
+
+form > input:hover{
+    background-color: rgb(243, 249, 255);
+}
+
+form {
+    width: 100%;
+    margin-inline: auto;
+}
+
+form > input {
+    width: 100%;
+    margin: 0;
+}
+
+input[type=text],
+.submit,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-block : 10px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
